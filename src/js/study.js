@@ -87,3 +87,28 @@ console.log("Lirio - Preço unidade: " + lirioP + ", Quantidade: " + lirioQ)
 console.log("Tulipa - Preço unidade: " + tulipaP + ", Quantidade: " + tulipaQ)
 
 console.log("Total: " + (rosaP * rosaQ + lirioP * lirioQ + tulipaP * tulipaQ))
+
+const rosaPTwo = 8
+let rosaQTwo = 70
+const lirioPTwo = 10 
+let lirioQTwo = 50 
+const tulipaPTwo = 2
+let tulipaQTwo = 120
+
+rosaQTwo -= 20 
+tulipaQTwo -= 30
+
+
+console.log("Rosa - Preço unidade: " + rosaPTwo + ", Quantidade: " + rosaQTwo)
+console.log("Lirio - Preço unidade: " + lirioPTwo + ", Quantidade: " + lirioQTwo)
+console.log("Tulipa - Preço unidade: " + tulipaPTwo + ", Quantidade: " + tulipaQTwo)
+
+console.log("Total: " + (rosaPTwo * rosaQTwo + lirioPTwo * lirioQTwo + tulipaPTwo * tulipaQTwo))
+
+let personOne = ["Name: Maxwell Wright", "Telefone: (0191) 719 6495", "Email: Curabitur.egestas.nunc@nunummyac.co.uk"]
+let personTwo = ["Name: Raja Villareal", "Telefone: 0866 398 2895", "Email: posuere.vulputate@sed.com"]
+let personThree = ["Name: Helena Richards", "Telefone: 0800 1111", "Email: libero@convallies.edu"]
+
+console.log(personOne)
+console.log(personTwo)
+console.log(personThree)
