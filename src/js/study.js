@@ -112,3 +112,17 @@ let personThree = ["Name: Helena Richards", "Telefone: 0800 1111", "Email: liber
 console.log(personOne)
 console.log(personTwo)
 console.log(personThree)
+
+let year = 2006
+console.log(year)
+console.log(2007)
+console.log("Murillo")
+
+let cpfValid = false
+let nomeValid = true
+let telValid = false
+nomeValid = false
+
+console.log(cpfValid)
+console.log(nomeValid)
+console.log(telValid)
