@@ -126,3 +126,113 @@ nomeValid = false
 console.log(cpfValid)
 console.log(nomeValid)
 console.log(telValid)
+console.log(typeof telValid)
+console.log(typeof year)
+
+let delay = 0.00016
+let area = (16 * 3.14)
+let halfArea = area / 2
+
+console.log(area)
+console.log(halfArea)
+
+let a = 1 / 0
+let b = -Infinity
+
+console.log(a)
+console.log(b)
+console.log(typeof a)
+console.log(typeof b)
+
+let s = "não é um numero"
+let n = s * 10
+console.log(n)
+console.log(typeof n)
+
+let big = 1n
+
+console.log(typeof big)
+
+let teste = '100' - '10'
+console.log(teste)
+console.log(typeof teste)
+teste = '100' * '10'
+console.log(teste)
+teste = '100' / '10'
+console.log(teste)
+teste = '100' + '10'
+console.log(teste)
+
+let country = "Malawi"
+let continent = "Africa"
+
+let sentence = `${country} está localizada na ${continent}`
+console.log(sentence)
+
+console.time()
+console.log("Teste")
+console.timeEnd()
+
+let river = "Tiete"
+let character = river.charAt(2)
+console.log(character)
+
+let str = "Vai se fuder Murillo"
+
+console.log(str.length)
+console.log(str.charAt(0))
+console.log('abc'.charAt(1))
+console.log(str.slice(0, 3))
+console.log(str.split(' '))
+
+let nulo = null
+console.log(nulo)
+console.log(typeof nulo)
+
+const string = String()
+const bool = Boolean()
+
+console.log(string)
+console.log(bool)
+
+const big1 = BigInt(42)
+console.log(big1)
+
+const num = 42
+
+const strFromNum1 = String(num)
+const strFromNum2 = String(8)
+const strFromBool = String(true)
+const boolFromNumber = Boolean(0)
+
+console.log(strFromNum1)
+console.log(strFromNum2)
+console.log(strFromBool)
+console.log(boolFromNumber)
+
+let st = "text"
+let stStr = String(st)
+console.log(`${typeof st} : ${st}`)
+console.log(`${typeof stStr} : ${stStr}`)
+
+let nr = 42
+let strNr = String(nr)
+console.log(`${typeof nr} : ${nr}`)
+console.log(`${typeof strNr} : ${strNr}`)
+
+let bl = true 
+let strBl = String(bl)
+console.log(`${typeof bl} : ${bl}`)
+console.log(`${typeof strBl} : ${strBl}`)
+
+let bnr = 123n
+let strBnr = String(bnr)
+console.log(`${typeof bnr} : ${bnr}`)
+console.log(`${typeof strBnr} : ${strBnr}`)
+
+console.log(Boolean(true))
+console.log(Boolean(42))
+console.log(Boolean(0))
+console.log(Boolean(NaN))
+console.log(Boolean("text"))
+console.log(Boolean(""))
