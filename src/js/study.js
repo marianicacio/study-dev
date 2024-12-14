@@ -298,3 +298,71 @@ console.table(pessoas)
 let allArrays  = pessoas.concat(mercado)
 
 console.table(allArrays)
+
+//Exercicio 1
+let ticket = { 
+    from: "São Paulo",
+    to: "São Bernardo",
+    price: 25
+}
+
+console.log(`Ticket from: ${ticket.from}`)
+console.log(`Ticket to: ${ticket.to}`)
+console.log(`Ticket price: ${ticket.price}`)
+
+//Exercicio 2
+let nomes = {
+
+}
+
+nomes.name = "Darlyson"
+nomes.lastName = "Robson"
+
+console.log(nomes)
+
+//Exercicio 3
+let book = [{
+    titulo: "Falado JavaScript",
+    autor: "Axel Raushmayer",
+    paginas: 460
+},
+{
+    titulo: "Programação de aplicações Javascript",
+    autor: "Eric Elliott",
+    paginas: 254
+},
+{
+    titulo: "Compreendendo ECMAScript 6",
+    autor: "Nicholas C. Zakas",
+    paginas: 352
+}]
+
+console.table(book)
+
+//Exercicio 4
+
+let newBook = {
+    titulo:"Learning JavaScript Design Patterns",
+    autor: "Addy Osmani",
+    paginas: 254
+}
+
+book.push(newBook)
+console.table(book)
+
+//Exercicio 5
+let selectedBooks = book.slice(-2)
+console.table(selectedBooks)
+console.table(book)
+
+//Exercicio 6 
+book.shift()
+console.log(book.length)
+console.log(book[0].titulo)
+console.log(book[1].titulo)
+console.log(book[2].titulo)
+console.table(book)
+
+//Exercicio
+let somaPag = book[0].paginas + book[1].paginas + book[2].paginas
+console.log(`Paginas: ${somaPag}`)
