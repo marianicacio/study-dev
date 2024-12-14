@@ -236,3 +236,65 @@ console.log(Boolean(0))
 console.log(Boolean(NaN))
 console.log(Boolean("text"))
 console.log(Boolean(""))
+
+// Objeto
+let obj = {
+    nr: 600,
+    str: "text"
+}
+
+console.log(obj)
+console.table(obj)
+console.table(obj.nr)
+console.table(obj.str)
+
+let person1 = {
+    name: "Murillo",
+    lastName: "Fernandes",
+    age: 1888
+}
+
+console.table(person1)
+console.log(person1.age)
+
+delete person1.lastName
+
+console.table(person1)
+
+// Array
+let mercado = ["Nescau", "Morango", "Laranja", "Maça"]
+console.log(mercado[0])
+console.log(mercado[4])
+console.table(mercado)
+
+mercado[0] = "Toddy" 
+
+console.table(mercado)
+
+let pessoas = []
+console.table(pessoas)
+
+pessoas[0] = "Darlyson"
+pessoas[1] = "Cabritinha"
+pessoas[3] = "Yasmin"
+
+console.table(pessoas)
+
+console.log(pessoas.indexOf("Yasmin"))
+
+pessoas.push("Nicolly")
+
+console.table(pessoas)
+
+let name = pessoas.pop()
+console.table(pessoas)
+
+let names = pessoas.shift()
+console.table(pessoas) 
+
+pessoas.reverse()
+console.table(pessoas)
+
+let allArrays  = pessoas.concat(mercado)
+
+console.table(allArrays)
