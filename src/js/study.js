@@ -497,20 +497,58 @@ console.log(d instanceof Array)
 console.log(true ? "Alice" : "Bob")
 console.log(false ? "Alice" : "Bob")
 
-alert("Hello, World")
-window.alert("Hello, World! For the second time")
-alert(4 * 7)
-alert(true)
-alert("text 1", "text 2")
+// alert("Hello, World")
+// window.alert("Hello, World! For the second time")
+// alert(4 * 7)
+// alert(true)
+// alert("text 1", "text 2")
 
-let decision = window.confirm("Está tudo bem?")
-console.log(decision)
+// let decision = window.confirm("Está tudo bem?")
+// console.log(decision)
 
-let remove = confirm("Remove all data?")
-let message = remove ? "Deleting Data" : "Cancelled"
-console.log(message)
+// let remove = confirm("Remove all data?")
+// let message = remove ? "Deleting Data" : "Cancelled"
+// console.log(message)
 
-let nome = window.prompt("What is your name?", "John Doe")
-nome = nome ? nome : "anonymous"
-let idade = prompt("Hello " + nome + " how old are you?")
-alert(nome + " is " + idade + " years old")
+// let nome = window.prompt("What is your name?", "John Doe")
+// nome = nome ? nome : "anonymous"
+// let idade = prompt("Hello " + nome + " how old are you?")
+// alert(nome + " is " + idade + " years old")
+
+// //Exercico 1
+// let L = window.prompt("Qual é a largura da caixa?", "0")
+// let A =  window.prompt("Qual é a altura da caixa?", "0")
+// let C =  window.prompt("Qual é a comprimento da caixa?", "0")
+// let V = L * A * C
+// alert(`O volume é ${V}`)
+
+let num1 = 2 * 3 ** 3 - 1 
+console.log(num1)
+
+let num2 = 2
+num2 **= 3
+console.log(num2)
+
+let ss = "12"
+ss = +s
+console.log(ss)
+
+let f = 10
+let m = ++f
+console.log(m)
+console.log(f)
+
+console.log(true && false || true)
+console.log(20||5)
+console.log(false||"false")
+
+let nn = "1"
+let g = (nn === 1)
+let h = (nn == 1)
+let i = (nn = 1)
+
+console.log(g)
+console.log(h)
+console.log(i)
+
+console.log(3 * 4 > 20 - 15)
