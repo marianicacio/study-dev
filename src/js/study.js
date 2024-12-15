@@ -363,6 +363,77 @@ console.log(book[1].titulo)
 console.log(book[2].titulo)
 console.table(book)
 
-//Exercicio
+//Exercicio 7 
 let somaPag = book[0].paginas + book[1].paginas + book[2].paginas
 console.log(`Paginas: ${somaPag}`)
+
+let n1 = 10
+let n2 = 10
+
+console.log(n1)
+console.log(n1 ++)
+console.log(n1)
+
+console.log(n2)
+console.log(++n2)
+console.log(n2)
+
+let n3 = 20
+let n4 = 20
+
+console.log(n3)
+console.log(n3--)
+console.log(n3)
+
+console.log(n4)
+console.log(--n4)
+console.log(n4)
+
+let c = 10
+c += 2 
+console.log(c) 
+c -= 4
+console.log(c)
+c *= 3
+console.log(c)
+c /= 6
+console.log(c)
+c **= 3
+console.log(c)
+c %= 10 
+console.log(c)
+
+console.log(true && true)
+console.log(true && false)
+console.log(false && true)
+console.log(false && false)
+
+console.log(true || true)
+console.log(true || false)
+console.log(false || true)
+console.log(false || false)
+
+console.log(!true)
+console.log(!false)
+
+let numN = 0
+let yearY = 1970
+let nameN = "ALice"
+let empty = ""
+
+console.log(!numN)
+console.log(!yearY)
+console.log(!nameN)
+console.log(!empty)
+console.log(!!numN)
+console.log(!!nameN)
+
+let d = true
+console.log(d)
+d &&= false
+console.log(d)
+
+let e = false
+console.log(e)
+e ||= true
+console.log(e)
