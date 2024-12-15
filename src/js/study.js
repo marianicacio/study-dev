@@ -456,3 +456,61 @@ console.log(true || false)
 console.log(false === false) // || !
 console.log(false || false || true)
 console.log(true || false && false && true)
+
+let frase = "Happy New Year "
+let novaFrase = frase + 2025
+console.log(novaFrase)
+
+frase = "Happy New "
+frase += "Year "
+frase += 2026
+console.log(frase)
+
+console.log(10 === 5)
+console.log(10 === 10)
+console.log(10 === "10")
+console.log("10" === "10")
+console.log("Alice" === "Bob")
+console.log("Bob" === "Bob")
+
+console.log(10 == 5)
+console.log(10 == 10)
+console.log(10 == "10")
+console.log("10" == "10")
+console.log("Alice" == "Bob")
+console.log("Bob" == "Bob")
+
+console.log(10 !== 5)
+console.log(10 !== 10)
+console.log(10 !== "10")
+console.log("10" !== "10")
+console.log("Alice" !== "Bob")
+console.log("Bob" !== "Bob")
+
+console.log(10 > 100)
+console.log(101 > 100)
+console.log(101 > "100")
+
+console.log(mercado instanceof Array)
+console.log(d instanceof Array)
+
+console.log(true ? "Alice" : "Bob")
+console.log(false ? "Alice" : "Bob")
+
+alert("Hello, World")
+window.alert("Hello, World! For the second time")
+alert(4 * 7)
+alert(true)
+alert("text 1", "text 2")
+
+let decision = window.confirm("Está tudo bem?")
+console.log(decision)
+
+let remove = confirm("Remove all data?")
+let message = remove ? "Deleting Data" : "Cancelled"
+console.log(message)
+
+let nome = window.prompt("What is your name?", "John Doe")
+nome = nome ? nome : "anonymous"
+let idade = prompt("Hello " + nome + " how old are you?")
+alert(nome + " is " + idade + " years old")
