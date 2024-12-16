@@ -43,7 +43,7 @@ console.log(greeting + counter)
 const bronwnie = 8
 
 let gasolina = 8
-console.log(gasolina) 
+console.log(gasolina)
 {
     gasolina = 10
     console.log(gasolina)
@@ -51,7 +51,7 @@ console.log(gasolina)
 gasolina += 2
 console.log(gasolina)
 
-let global = 552 
+let global = 552
 {
     let notGlobal = 569
     console.log(global)
@@ -77,8 +77,8 @@ soma()
 
 let rosaP = 8
 let rosaQ = 70
-let lirioP = 10 
-let lirioQ = 50 
+let lirioP = 10
+let lirioQ = 50
 let tulipaP = 2
 let tulipaQ = 120
 
@@ -90,12 +90,12 @@ console.log("Total: " + (rosaP * rosaQ + lirioP * lirioQ + tulipaP * tulipaQ))
 
 const rosaPTwo = 8
 let rosaQTwo = 70
-const lirioPTwo = 10 
-let lirioQTwo = 50 
+const lirioPTwo = 10
+let lirioQTwo = 50
 const tulipaPTwo = 2
 let tulipaQTwo = 120
 
-rosaQTwo -= 20 
+rosaQTwo -= 20
 tulipaQTwo -= 30
 
 
@@ -220,7 +220,7 @@ let strNr = String(nr)
 console.log(`${typeof nr} : ${nr}`)
 console.log(`${typeof strNr} : ${strNr}`)
 
-let bl = true 
+let bl = true
 let strBl = String(bl)
 console.log(`${typeof bl} : ${bl}`)
 console.log(`${typeof strBl} : ${strBl}`)
@@ -267,7 +267,7 @@ console.log(mercado[0])
 console.log(mercado[4])
 console.table(mercado)
 
-mercado[0] = "Toddy" 
+mercado[0] = "Toddy"
 
 console.table(mercado)
 
@@ -290,17 +290,17 @@ let name = pessoas.pop()
 console.table(pessoas)
 
 let names = pessoas.shift()
-console.table(pessoas) 
+console.table(pessoas)
 
 pessoas.reverse()
 console.table(pessoas)
 
-let allArrays  = pessoas.concat(mercado)
+let allArrays = pessoas.concat(mercado)
 
 console.table(allArrays)
 
 //Exercicio 1
-let ticket = { 
+let ticket = {
     from: "São Paulo",
     to: "São Bernardo",
     price: 25
@@ -342,7 +342,7 @@ console.table(book)
 //Exercicio 4
 
 let newBook = {
-    titulo:"Learning JavaScript Design Patterns",
+    titulo: "Learning JavaScript Design Patterns",
     autor: "Addy Osmani",
     paginas: 254
 }
@@ -371,7 +371,7 @@ let n1 = 10
 let n2 = 10
 
 console.log(n1)
-console.log(n1 ++)
+console.log(n1++)
 console.log(n1)
 
 console.log(n2)
@@ -390,8 +390,8 @@ console.log(--n4)
 console.log(n4)
 
 let c = 10
-c += 2 
-console.log(c) 
+c += 2
+console.log(c)
 c -= 4
 console.log(c)
 c *= 3
@@ -400,7 +400,7 @@ c /= 6
 console.log(c)
 c **= 3
 console.log(c)
-c %= 10 
+c %= 10
 console.log(c)
 
 console.log(true && true)
@@ -439,9 +439,9 @@ e ||= true
 console.log(e)
 
 //Exercicio 1
-console.log(2*3+1)
-console.log(2**4)
-console.log(5*1)
+console.log(2 * 3 + 1)
+console.log(2 ** 4)
+console.log(5 * 1)
 console.log(8 ** 2 - 5 ** 2)
 
 //Exercicio 2
@@ -522,7 +522,7 @@ console.log(false ? "Alice" : "Bob")
 // let V = L * A * C
 // alert(`O volume é ${V}`)
 
-let num1 = 2 * 3 ** 3 - 1 
+let num1 = 2 * 3 ** 3 - 1
 console.log(num1)
 
 let num2 = 2
@@ -539,8 +539,8 @@ console.log(m)
 console.log(f)
 
 console.log(true && false || true)
-console.log(20||5)
-console.log(false||"false")
+console.log(20 || 5)
+console.log(false || "false")
 
 let nn = "1"
 let g = (nn === 1)
@@ -553,34 +553,218 @@ console.log(i)
 
 console.log(3 * 4 > 20 - 15)
 
-let isUserReady = confirm("Are you ready?")
-console.log(isUserReady)
-if(isUserReady){
-    alert("User ready!")
+// let isUserReady = confirm("Are you ready?")
+// console.log(isUserReady)
+// if(isUserReady){
+//     alert("User ready!")
+// } else {
+//     alert("User not ready!")
+// }
+
+// let unitPrice = 10
+// let pieces = prompt("How many pieces do you order?", 0)
+// if (pieces > 0) {
+//     let total = unitPrice * pieces
+//     alert(`The price is: ${total}`)
+// }
+
+// let number = prompt("Enter a number", 0)
+// if (number < 10) {
+//     alert("<10")
+// } else if (number < 30) {
+//     alert("<30")
+// } else if (number < 60) {
+//     alert("<60")
+// } else if (number < 90) {
+//     alert("<90")
+// } else if (number < 100) {
+//     alert("<100")
+// } else if (number === 100) {
+//     alert("100")
+// } else {
+//     alert(">100")
+// }
+
+let price2 = 80
+let shippingCost
+if (price2 > 50) {
+    shippingCost = 0
 } else {
-    alert("User not ready!")
+    shippingCost = 5
 }
 
-let unitPrice = 10
-let pieces = prompt("How many pieces do you order?", 0)
-if (pieces > 0) {
-    let total = unitPrice * pieces
-    alert(`The price is: ${total}`)
+// console.log(`price = ${price2}, shipping = ${shippingCost}`)
+
+// let price3 = 100
+// let shipping = price3 > 50 ? 0 : 5
+// console.log(`price = ${price3}, shipping = ${shipping}`)
+
+// let start = confirm("Start?")
+// start ? alert("Here we go!") : console.log("Aborted")
+
+// let gate = prompt("Choose gate: a,b, or c")
+// let win = false
+// switch (gate) {
+//     case "a":
+//         alert("Gate A: empty")
+//         break
+//     case "b":
+//         alert("Gate B: main prize")
+//         break
+//     case "c":
+//         alert("Gate C: empty")
+//         break
+//         default:
+//         alert("No gate " + String(gate))
+// }
+// if (win) {
+//     alert("Winner!")
+// }
+
+// let numB = prompt("Escolha um numero: ")
+// if (numB > 90 && numB < 110) {
+//     alert("Bingo")
+// } else {
+//     alert("Perdeu")
+// }
+
+// let numC = (numB > 90 && numB < 110) ? "Bingo" : "Perdeu" 
+// alert(numC)
+
+let nW = 0
+while (nW < 999) {
+    console.log(nW)
+    nW += 10
 }
 
-let number = prompt("Enter a number", 0)
-if (number < 10) {
-    alert("<10")
-} else if (number < 30) {
-    alert("<30")
-} else if (number < 60) {
-    alert("<60")
-} else if (number < 90) {
-    alert("<90")
-} else if (number < 100) {
-    alert("<100")
-} else if (number === 100) {
-    alert("100")
-} else {
-    alert(">100")
+// let isOver = false 
+// let counter1 = 1
+// while(isOver != true) {
+//     let continueLoop = confirm(`[${counter1}] Continue the loop?`)
+//     isOver = continueLoop === true ? false : true
+//     counter1++
+// } 
+
+// let over 
+// counter1 = 1
+// do {
+//     over = !confirm(`[${counter1++}] Continue the loop?`)
+// } while (!over)
+
+for (let i = 0; i < 10; i++) {
+    console.log(i)
 }
+
+i = 0
+while (i < 10) {
+    console.log(i)
+    i++
+}
+
+let values = [10, 30, 50, 100]
+let sum = 0
+for (let i = 0; i < values.length; i++) { // values.length para se caso a array aumentar
+    sum += values[i]
+}
+console.log(sum)
+
+// let nomes1 = []
+// let ov = false
+// while (!ov) {
+//     let nome = prompt("Enter another name or press cancel.")
+//     if (nome != null) {
+//         nomes1.push(nome)
+//     } else {
+//         ov = true
+//     }
+// }
+// for (let i = 0; i < nomes1.length; i++) {
+//     console.log(nomes1[i])
+// }
+
+let usuario = {
+    name: "Maria",
+    lastName: "Nicacio",
+    age: 22,
+    email: "mariaeduarda.nicacio2007@gmail.com"
+}
+for(let key in usuario) {
+    console.log(`${key} -> ${usuario[key]}`)
+}
+
+i = 0
+
+// while (true) {
+//     console.log(i)
+//     i++
+//     if(i >= 5) {
+//         break
+//     }
+// }
+// alert(`Exitedd the loop with a break (${i})`)
+
+for (let i = 0; i < 10; i++) {
+    if (i == 3) {
+        continue
+    }
+    console.log(i)
+}
+
+let n5 = 100
+while(n5 >= 0) {
+    console.log(n5)
+    n5 -= 10
+}
+
+// let nU = prompt("Escolha o primeiro numero")
+// let nU2 = prompt("Escolha o segundo numero")
+// while(nU >= nU2) {
+//     console.log(nU)
+//     nU -= 10
+// }
+
+let numeros = [21, 45, 100, 12, 11, 78, 61, 4, 39, 22]
+
+for(i = 0; i < numeros.length; i++) {
+    console.log(numeros[i])
+}
+for(i = 0; i< numeros.length; i++) {
+    if((numeros[i] % 2) == 0) {
+        console.log(numeros[i])
+    }
+}
+for(i = 0; i < numeros.length; i++) {
+    if(numeros[i] > 10 && numeros[i] < 60){
+        console.log(numeros[i])
+    }
+}
+
+let navio = {
+    latitude: 40.07288,
+    longitude: 154.48535,
+    curso: 285.6,
+    velocidade: 14.0, 
+    imo: 9175717,
+    nome: "Mareno"
+}
+
+for(let key in navio) {
+    console.log(`${key} -> ${navio [key]}`)
+}
+
+let temp
+let soma1
+let meanTemp
+function getMeanTemp() {
+    soma1 = 0
+    for (let i = 0; i < temp.length; i++) {
+        soma1 += temp[i]
+    }
+    meanTemp = soma1 / temp.length 
+}
+temp = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21, 20, 19, 17, 16];
+getMeanTemp()
+console.log(`mean: ${meanTemp}`)
+temp = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18, 17, 16];
+getMeanTemp();
+console.log(`mean: ${meanTemp}`)
