@@ -552,3 +552,35 @@ console.log(h)
 console.log(i)
 
 console.log(3 * 4 > 20 - 15)
+
+let isUserReady = confirm("Are you ready?")
+console.log(isUserReady)
+if(isUserReady){
+    alert("User ready!")
+} else {
+    alert("User not ready!")
+}
+
+let unitPrice = 10
+let pieces = prompt("How many pieces do you order?", 0)
+if (pieces > 0) {
+    let total = unitPrice * pieces
+    alert(`The price is: ${total}`)
+}
+
+let number = prompt("Enter a number", 0)
+if (number < 10) {
+    alert("<10")
+} else if (number < 30) {
+    alert("<30")
+} else if (number < 60) {
+    alert("<60")
+} else if (number < 90) {
+    alert("<90")
+} else if (number < 100) {
+    alert("<100")
+} else if (number === 100) {
+    alert("100")
+} else {
+    alert(">100")
+}
