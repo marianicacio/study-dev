@@ -688,7 +688,7 @@ let usuario = {
     age: 22,
     email: "mariaeduarda.nicacio2007@gmail.com"
 }
-for(let key in usuario) {
+for (let key in usuario) {
     console.log(`${key} -> ${usuario[key]}`)
 }
 
@@ -711,7 +711,7 @@ for (let i = 0; i < 10; i++) {
 }
 
 let n5 = 100
-while(n5 >= 0) {
+while (n5 >= 0) {
     console.log(n5)
     n5 -= 10
 }
@@ -725,16 +725,16 @@ while(n5 >= 0) {
 
 let numeros = [21, 45, 100, 12, 11, 78, 61, 4, 39, 22]
 
-for(i = 0; i < numeros.length; i++) {
+for (i = 0; i < numeros.length; i++) {
     console.log(numeros[i])
 }
-for(i = 0; i< numeros.length; i++) {
-    if((numeros[i] % 2) == 0) {
+for (i = 0; i < numeros.length; i++) {
+    if ((numeros[i] % 2) == 0) {
         console.log(numeros[i])
     }
 }
-for(i = 0; i < numeros.length; i++) {
-    if(numeros[i] > 10 && numeros[i] < 60){
+for (i = 0; i < numeros.length; i++) {
+    if (numeros[i] > 10 && numeros[i] < 60) {
         console.log(numeros[i])
     }
 }
@@ -743,13 +743,13 @@ let navio = {
     latitude: 40.07288,
     longitude: 154.48535,
     curso: 285.6,
-    velocidade: 14.0, 
+    velocidade: 14.0,
     imo: 9175717,
     nome: "Mareno"
 }
 
-for(let key in navio) {
-    console.log(`${key} -> ${navio [key]}`)
+for (let key in navio) {
+    console.log(`${key} -> ${navio[key]}`)
 }
 
 let temp
@@ -760,7 +760,7 @@ function getMeanTemp() {
     for (let i = 0; i < temp.length; i++) {
         soma1 += temp[i]
     }
-    meanTemp = soma1 / temp.length 
+    meanTemp = soma1 / temp.length
 }
 temp = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21, 20, 19, 17, 16];
 getMeanTemp()
@@ -768,3 +768,206 @@ console.log(`mean: ${meanTemp}`)
 temp = [17, 16, 14, 12, 10, 10, 10, 11, 13, 14, 15, 17, 22, 27, 29, 29, 27, 26, 24, 21, 19, 18, 17, 16];
 getMeanTemp();
 console.log(`mean: ${meanTemp}`)
+
+let nameF = "Alice"
+function showName() {
+    console.log(nameF)
+}
+showName()
+
+function showMsg() {
+    console.log("message 1")
+    return
+    console.log("message 2")
+}
+showMsg()
+
+function getTrue() {
+    return true
+}
+
+let tr = getTrue()
+console.log(tr)
+
+function getElement(elements, index) {
+    return elements[index]
+}
+
+let nM = ["Alice", "Bob", "Eve", "John"]
+let nm = getElement(nM, 2)
+console.log(nm)
+nM.forEach(showName)
+
+function add(first, second) {
+    return first + second
+}
+
+let first = 10, second = 20, third = 40, fourth = 80
+console.log(add(first, second))
+console.log(add(second, third))
+console.log(add(third, fourth))
+
+let j = 100, k = 200, l = 300
+function t(j) {
+    let k = 10
+    console.log(j)
+    console.log(k)
+    console.log(l)
+}
+t(1)
+
+console.log(j)
+console.log(k)
+console.log(l)
+
+function getMeanTemp(temp) {
+    if (!(temp instanceof Array)) {
+        return NaN
+    }
+    let sum = 0
+    for (let i = 0; i < temp.length; i++) {
+        sum += temp[i]
+    }
+    return sum / temp.length
+}
+
+console.log(getMeanTemp(10))
+console.log(getMeanTemp([10, 30]))
+
+function factorial(n) {
+    let result = 1
+    while (n > 1) {
+        result *= n
+        n--
+    }
+    return result
+}
+console.log(factorial(6))
+
+function factorial(n) {
+    return n > 1 ? n * factorial(n - 1) : 1
+}
+console.log(factorial(6))
+
+function showMessage(message) {
+    console.log(`Message: ${message}`)
+}
+let sm = showMessage
+
+sm("This works!")
+console.log(typeof sm)
+
+function add(a, b) {
+    return a + b
+}
+
+function multiply(a, b) {
+    return a * b
+}
+
+function operation(func, first, second) {
+    return func(first, second)
+}
+
+console.log(operation(add, 10, 20))
+console.log(operation(multiply, 10, 20))
+
+let myAdd = function add(a, b) {
+    return a + b
+}
+console.log(myAdd(10, 20))
+console.log(add(10, 20))
+
+console.log(operation(function (a, b) {
+    return a + b
+}, 10, 20))
+
+let inner = function () {
+    console.log('inner 1')
+}
+let outer = function (callback) {
+    console.log('outer 1')
+    callback()
+    console.log('outer 2')
+}
+console.log('test 1')
+outer(inner)
+console.log('test 2')
+
+let inner2 = function () {
+    console.log('inner 1')
+}
+let outer2 = function (callback) {
+    console.log('outer 1')
+    setTimeout(callback, 1000) // atraso de 1000 milissegundos
+    console.log('outer 2')
+}
+console.log('test 1')
+outer(inner)
+console.log('test 2')
+
+let inner3 = function () {
+    console.log('inner 1')
+}
+let outer3 = function (callback) {
+    console.log('outer 1')
+    let timeId = setInterval(callback, 1000)
+    console.log('outer 2')
+    setTimeout(function () {
+        clearInterval(timeId)
+    }, 5500)
+}
+console.log('test 1')
+outer3(inner3)
+console.log('test 2')
+
+//contador de cliques
+// window.addEventListener("click", function () {
+//     console.log("clicked!")
+// })
+
+let add2 = (a,b) => {
+    return a + b
+}
+console.log(add(10, 20))
+
+let add3 = (a,b) => a + b
+console.log(add(10, 20))
+
+//Exercicio 1
+// let numB = prompt("Digite um número: ")
+// if(numB > 90 && numB < 110) {
+//     alert("Bingo")
+// } else {
+//     alert("Errou")
+// }
+
+//Exercicio 2
+// function add (a,b) {
+//     if(!Number.isInteger(a) || !Number.isInteger(b)) {
+//         return NaN
+//     }
+//     return a + b
+// } 
+// function sub (a,b) {
+//     if(!Number.isInteger(a) || !Number.isInteger(b)) {
+//         return NaN
+//     }
+//     return a - b
+// } 
+// function mult (a,b) {
+//     if(!Number.isInteger(a) || !Number.isInteger(b)) {
+//         return NaN
+//     }
+//     return a * b
+// } 
+
+// console.log(add(12, 10))
+// console.log(mult(12, 10))
+
+try {
+    let a = b
+} catch (error) {
+    console.log("Caught " + error)
+}
+console.log("We handled the exception!")
